@@ -22,4 +22,5 @@ logging:
         web: DEBUG
         http: DEBUG
         
-msg:hello
+msg: hi        
+
