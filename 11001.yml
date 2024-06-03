@@ -21,3 +21,4 @@ logging:
       springframework:
         web: DEBUG
         http: DEBUG
+msg:hi
