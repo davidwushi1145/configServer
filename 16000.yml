@@ -33,3 +33,4 @@ resilience4j:
     instances:
       backendA:
         baseConfig: default
+msg: hii   
