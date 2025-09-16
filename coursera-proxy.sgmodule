@@ -1,0 +1,5 @@
+#!name=Coursera 专用代理
+#!desc=强制为 Coursera.org 及其所有子域名指定代理策略。
+
+[Rule]
+DOMAIN-SUFFIX,coursera.org,US
