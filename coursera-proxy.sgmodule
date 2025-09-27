@@ -2,4 +2,15 @@
 #!desc=强制为 Coursera.org 及其所有子域名指定代理策略。
 
 [Rule]
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject_extra.conf,REJECT,pre-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching,pre-matching
+RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
+RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,US
+RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxies
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/apple_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
 DOMAIN-SUFFIX,coursera.org,US
+RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT
