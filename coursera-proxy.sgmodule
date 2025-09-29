@@ -29,13 +29,6 @@ RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft.conf,DIRECT
 RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
 RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
 
-RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,Proxies
-
-RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxies
-RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/apple_cdn.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
-DOMAIN-SUFFIX,coursera.org,US
 RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT
+
+DOMAIN-SUFFIX,coursera.org,US
