@@ -2,10 +2,35 @@
 #!desc=强制为 Coursera.org 及其所有子域名指定代理策略。
 
 [Rule]
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT,extended-matching,pre-matching
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject_extra.conf,REJECT,pre-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching,pre-matching
-RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching,pre-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,pre-matching
+
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/speedtest.conf,[Replace with your policy],extended-matching
+
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,Proxies
+RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,Proxies
+
 RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,US
+
+RULE-SET,https://ruleset.skk.moe/List/non_ip/telegram.conf,Proxies
+RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxies
+
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/apple_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_services.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
+
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft.conf,DIRECT
+
+
+RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
+
+RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,Proxies
+
 RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxies
 RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/apple_cdn.conf,DIRECT
